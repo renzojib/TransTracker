@@ -1,0 +1,14 @@
+{
+  "name": "bank-api-service",
+  "version": "1.0.0",
+  "description": "Api to get transactions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Ebuka Ojiba",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
