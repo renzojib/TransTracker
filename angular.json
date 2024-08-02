@@ -63,7 +63,8 @@
               "browserTarget": "TransTracker:build:production"
             },
             "development": {
-              "browserTarget": "TransTracker:build:development"
+              "browserTarget": "TransTracker:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
