@@ -1,1 +1,7 @@
-<p>transactions works!</p>
+<section *ngIf="transactions.length > 0" class="top-transaction-list">
+    <ul *ngFor="let transaction of transactions">
+        <li>{{transaction.date}}</li>
+        <li>{{transaction.description}}</li>
+        <li>{{transaction.amount}}</li>
+    </ul>
+</section>

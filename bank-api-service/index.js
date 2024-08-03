@@ -12,7 +12,7 @@ const data = [{"date": "07/24/2032", "amount": "-40.00", "description": "PUNTING
 app.get("/", function (req, res) {
     res.send("Connection successfull")
 });
-app.get("/transactions", function (req, res) {
+app.get("/api/transactions", function (req, res) {
     res.send(data);
 })
 

@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,AppRoutingModule, HttpClientModule

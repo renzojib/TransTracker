@@ -11,6 +11,6 @@ export class TransactionsService {
   constructor(private http: HttpClient) { }
 
   getTransactions (): Observable<ITransaction[]> {
-    return this.http.get<ITransaction[]>("/#/transactions");
+    return this.http.get<ITransaction[]>("/api/transactions");
   }
 }
