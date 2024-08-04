@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TransactionsComponent } from './transactions/transactions.component';
-import { NoteComponent } from './note/note.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, title: "TransTracker - Home"},
   {path: "transactions", component:TransactionsComponent, title: "TransTracker - Transaction"},
-  {path: "note", component:NoteComponent, title: "TransTracker - Note"},
+  {path: "note", component:EditComponent, title: "TransTracker - Note"},
   { path: "", redirectTo: "/home", pathMatch: "full"}
 ]
 

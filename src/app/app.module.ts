@@ -8,7 +8,7 @@ import { TransactionsComponent } from './transactions/transactions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
-import { NoteComponent } from './note/note.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { NoteComponent } from './note/note.component';
     HomeComponent,
     TransactionsComponent,
     HeaderComponent,
-    NoteComponent
+    EditComponent
   ],
   imports: [
     BrowserModule,AppRoutingModule, HttpClientModule, FormsModule

@@ -12,6 +12,7 @@ export class TransactionsComponent {
   transactions: ITransaction[] = [];
   note: string = "";
   showTransactions!: boolean;
+  index!: number;
 
   @Input() topTransactions!: boolean;
 
@@ -37,8 +38,8 @@ export class TransactionsComponent {
 
   //Evil laughter
   showNoteSection(index: number) {
-    this.showTransactions = false;
-    this.router.navigate(["note"], {queryParams: {transactionIndex: index}});
+    this.index = index;
+    this.showTransactions = !this.showTransactions;
   }
 
   toggleShowTransactions() {

@@ -1,5 +1,5 @@
 <section  class="container-fluid py-3">
-    <table class="table">
+    <table class="table" *ngIf="showTransactions === true">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -16,13 +16,12 @@
             <td>{{transaction.description}}</td>
             <td>{{transaction.amount}}</td>
             <td>
-                <button class="btn btn-warning btn-sm">Edit</button>
-                <button class="btn btn-primary btn-sm" (click)="showNoteSection(i)">Note</button>
+                <button class="btn btn-warning btn-sm"  (click)="showNoteSection(i)">Edit</button>
                 <button class="btn btn-primary btn-sm" (click)="removeTransaction(i)">Delete</button>
             </td>
           </tr>
         </tbody>
-        <app-note *ngIf="showTransactions == false" (add)="toggleShowTransactions()"></app-note>
       </table>
+      <app-edit *ngIf="showTransactions == false" [transactionIndex]="index" (add)="toggleShowTransactions()"></app-edit>
 </section>
   
