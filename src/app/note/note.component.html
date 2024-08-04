@@ -1,0 +1,20 @@
+<form>
+    <div class="form-group">
+      <label for="transaction-date">Date</label>
+      <input type="text" class="form-control" id="transaction-date" aria-describedby="transaction-date-info" [value]="transaction.date" disabled>
+      <small id="transaction-date-info" class="form-text text-muted">When this transaction occured</small>
+    </div>
+    <div class="form-group">
+      <label for="transaction-desc">Description</label>
+      <input type="text" class="form-control" id="transaction-desc" [value]="transaction.description" disabled>
+    </div>
+    <div class="form-group">
+      <label for="transaction-amount">Amount</label>
+      <input type="number" class="form-control" id="transaction-amount" [value]="transaction.amount" disabled>
+    </div>
+    <div class="form-group">
+        <label for="transaction-note">Note</label>
+        <textarea class="form-control" id="transaction-note" rows="3"> This will not get saved. In other to do that you will need to update the Itransaction model to account for it and also make updates to the data in the server.</textarea>
+      </div>
+    <button type="submit" class="btn btn-primary" (click)="addNote()">Submit</button>
+  </form>

@@ -7,16 +7,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { NoteComponent } from './note/note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TransactionsComponent,
-    HeaderComponent
+    HeaderComponent,
+    NoteComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule, HttpClientModule
+    BrowserModule,AppRoutingModule, HttpClientModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
