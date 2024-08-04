@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { TransactionsComponent } from './transactions/transactions.component';
-import { EditComponent } from './edit/edit.component';
+import { TransactionsComponent } from './transaction/transactions/transactions.component';
+import { EditComponent } from './transaction/edit/edit.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, title: "TransTracker - Home"},

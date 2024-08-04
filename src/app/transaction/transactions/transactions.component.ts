@@ -1,4 +1,4 @@
-import { Component, inject, Injectable, Input } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { TransactionsService } from './transactions.service';
 import { ITransaction } from './transaction.model';
 import { Router } from '@angular/router';
